@@ -16,7 +16,8 @@ public class MainClass {
             System.out.println("Hello .................");
             for (PersonClass x : readerClassAllPerson) {
                 System.out.println(x);
-            };
+            }
+            ;
 
         }
         filterClass.test(readerClassAllPerson);

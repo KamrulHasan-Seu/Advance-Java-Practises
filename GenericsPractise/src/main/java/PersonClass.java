@@ -3,7 +3,11 @@ public class PersonClass {
     private String sex;
     private int age;
 
-  public PersonClass(){};
+    public PersonClass() {
+    }
+
+    ;
+
     public PersonClass(String name, String sex, int age) {
         this.setName(name);
         this.setSex(sex);
@@ -38,7 +42,7 @@ public class PersonClass {
     public String toString() {
         return
                 ("name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", age=" + age);
+                        ", sex='" + sex + '\'' +
+                        ", age=" + age);
     }
 }

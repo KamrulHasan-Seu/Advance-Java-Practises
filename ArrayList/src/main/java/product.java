@@ -17,7 +17,7 @@ public class product {
 
     @Override
     public String toString() {
-        return ("Name: "+ getProductName() + " price= " + getPrice());
+        return ("Name: " + getProductName() + " price= " + getPrice());
     }
 
 }

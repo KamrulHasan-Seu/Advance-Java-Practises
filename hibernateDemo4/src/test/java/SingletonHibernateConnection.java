@@ -8,6 +8,7 @@ public class SingletonHibernateConnection {
 
     private static SingletonHibernateConnection hibernateConnection = null;
     private static SingletonHibernateConnection ourInstance = new SingletonHibernateConnection();
+
     private SingletonHibernateConnection() {
         SessionFactory sessionFactory = new Configuration() {
             @Override
@@ -15,7 +16,7 @@ public class SingletonHibernateConnection {
                 return new AppConfigurationEntry[0];
             }
         }.configure("hibernate.cfg.xml").buildSessionFactory();
-    public static SingletonHibernateConnection getInstance() {
-        return hibernateConnection;
+        public static SingletonHibernateConnection getInstance () {
+            return hibernateConnection;
+        }
     }
-}

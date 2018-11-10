@@ -4,7 +4,7 @@ public class FilterAtLeastage30 implements FilterClass<PersonClass> {
 
 
     public boolean test(PersonClass personClass) {
-        if (personClass.getAge()>= 30){
+        if (personClass.getAge() >= 30) {
             return true;
         }
         return false;

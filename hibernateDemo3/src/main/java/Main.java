@@ -4,24 +4,22 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 public class Main {
-    public Main(){
+    public Main() {
         Session session = SingleToneSessionFactory.getSessionFactory().openSession();
         Transaction transaction = null;
 
         try {
             transaction = session.beginTransaction();
-            product p = new product(34,"shamim",34.00);
+            product p = new product(34, "shamim", 34.00);
             session.save(p);
             transaction.commit();
             System.out.println("Connected");
-        }
-        catch (HibernateException hibernateException){
+        } catch (HibernateException hibernateException) {
 
             transaction.rollback();
             hibernateException.printStackTrace();
 
-        }
-        finally {
+        } finally {
             session.close();
 
         }

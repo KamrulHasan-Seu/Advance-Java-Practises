@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Reader {
-    public List<Person> readPersonList(){
+    public List<Person> readPersonList() {
         List<Person> personList = new ArrayList<>();
         InputStream inputStream;
 
@@ -27,7 +27,7 @@ public class Reader {
                     Sex sex = Sex.valueOf(tokens[1].toUpperCase());
                     int age = Integer.parseInt(tokens[2]);
 
-                    Person person = new Person(name,sex,age);
+                    Person person = new Person(name, sex, age);
                     personList.add(person);
                 }
             } catch (FileNotFoundException e) {

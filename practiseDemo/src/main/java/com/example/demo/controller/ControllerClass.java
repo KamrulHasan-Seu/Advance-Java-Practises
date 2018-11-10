@@ -18,11 +18,11 @@ public class ControllerClass {
 
     @GetMapping(value = "/products")
     @ResponseBody
-    public Iterable<Product> getAllProducts(){
+    public Iterable<Product> getAllProducts() {
 
-        Product p = new Product(3,"Box",400);
+        Product p = new Product(3, "Box", 400);
 //        productRepository.save(p);
-        Product p1 = new Product(2,"Bag",700);
+        Product p1 = new Product(2, "Bag", 700);
 //        productRepository.save(p1);
 
 
@@ -34,14 +34,16 @@ public class ControllerClass {
     public Product getProduct(@RequestParam int id) {
         return productRepository.findById(id).orElse(new Product());
     }
+
     @GetMapping(value = "/productbyname")
     @ResponseBody
-    public List<Product> getAllSameNameProducts(@RequestParam String name){
+    public List<Product> getAllSameNameProducts(@RequestParam String name) {
         return productRepository.findProductByProductName(name);
     }
+
     @PostMapping(value = "/insertproduct")
     @ResponseBody
-    public Product insertProduct(@RequestBody Product product){
+    public Product insertProduct(@RequestBody Product product) {
         return productRepository.save(product);
     }
 }

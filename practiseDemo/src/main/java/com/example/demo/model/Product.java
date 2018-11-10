@@ -17,7 +17,7 @@ import java.util.ListIterator;
 @NoArgsConstructor
 @ToString
 @Entity
-public class Product  {
+public class Product {
     @Id
     int id;
     String productName;

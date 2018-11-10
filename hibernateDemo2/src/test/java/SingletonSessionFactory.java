@@ -4,7 +4,7 @@ import org.hibernate.cfg.Configuration;
 public class SingletonSessionFactory {
     private static SingletonSessionFactory ourInstance = new SingletonSessionFactory();
 
-    private static SessionFactory sessionFactory = null ;
+    private static SessionFactory sessionFactory = null;
     private static SingletonSessionFactory singletonSessionFactory = new SingletonSessionFactory();
 
     private SingletonSessionFactory() {

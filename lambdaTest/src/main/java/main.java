@@ -56,16 +56,16 @@ public class main {
         Filter<Person> maleFilter = new Filter<Person>() {
             @Override
             public boolean test(Person person) {
-                if (person.getSex().equals(Sex.MALE)){
-                    return  true;
+                if (person.getSex().equals(Sex.MALE)) {
+                    return true;
 
                 }
-               return false;
+                return false;
             }
         };
 
         for (Person p : reader.readPersonList()) {
-            if (maleFilter.test(p)){
+            if (maleFilter.test(p)) {
                 System.out.println(p);
             }
         }

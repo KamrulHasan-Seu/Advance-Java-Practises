@@ -8,32 +8,19 @@ public class Main {
     public Main() {
         Session session = SingleToneSessionFactory.getSessionFactory().openSession();
         Transaction transaction = null;
-        try{
+        try {
             transaction = session.beginTransaction();
             Product p = new Product(6834,
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                     "Rajon", 0.150);
             session.save(p);
             transaction.commit();
-        } catch(HibernateException e)
-        {
+        } catch (HibernateException e) {
             System.out.println("Exception is: " + e);
             transaction.rollback();
             e.printStackTrace();
-        }finally {
+        } finally {
             session.close();
         }
 

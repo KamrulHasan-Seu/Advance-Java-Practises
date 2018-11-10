@@ -12,10 +12,9 @@ public class MatchAge implements FilterClass<List<PersonClass>> {
 
     public List<PersonClass> test(List<PersonClass> personClasses) {
 
-        for (PersonClass p: personClasses) {
+        for (PersonClass p : personClasses) {
 
-            if (p.getAge() > 30)
-            {
+            if (p.getAge() > 30) {
                 personClass2.add(p);
             }
 

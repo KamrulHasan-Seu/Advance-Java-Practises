@@ -19,11 +19,9 @@ public class MainClass {
 
         List<PersonClass> p = mailOrFemaleCheck.check(readerClass.getAllPerson());
 
-        for (PersonClass s: p) {
+        for (PersonClass s : p) {
             System.out.println(s);
         }
-
-
 
 
     }

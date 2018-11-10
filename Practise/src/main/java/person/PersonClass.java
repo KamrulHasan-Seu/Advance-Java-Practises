@@ -3,9 +3,9 @@ package person;
 public class PersonClass {
     private String name;
     private Sex sex;
-    private int  age;
+    private int age;
 
-    public PersonClass(){
+    public PersonClass() {
 
     }
 

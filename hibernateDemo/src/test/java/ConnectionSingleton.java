@@ -2,10 +2,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public  class ConnectionSingleton {
+public class ConnectionSingleton {
     String USER = "root";
     String URL = "jdbc:mysql://127.0.0.1/productdb";
-    String PASS ="";
+    String PASS = "";
     //Class.forName("com.mysql.jdbc.Driver");
 
     private static Connection connection = null;

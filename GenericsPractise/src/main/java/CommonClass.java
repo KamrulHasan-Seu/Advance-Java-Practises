@@ -1,4 +1,4 @@
-public enum  CommonClass {
+public enum CommonClass {
     male,
     female;
 }
